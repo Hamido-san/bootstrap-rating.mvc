@@ -67,5 +67,10 @@ namespace BootstrapRating.Controls
         /// Set the desired icons to be used in the control.
         /// </summary>
         IRatingControl Symbols(string filledSymbols, string emptySymbols);
+
+        /// <summary>
+        /// Set/overrite the name of the control.
+        /// </summary>
+        IRatingControl InputName(string name);
     }
 }

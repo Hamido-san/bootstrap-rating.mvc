@@ -104,5 +104,12 @@ namespace BootstrapRating.Controls
         {
             return Set(BootstrapRatingOptions.step, step);
         }
+ 
+        public IRatingControl InputName(string name)
+        {
+            _input.Attributes.Remove("name");
+            _input.Attributes.Add("name", name);
+            return this;
+        }
     }
 }
